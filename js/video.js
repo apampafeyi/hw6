@@ -65,7 +65,9 @@ document.getElementById("mute").addEventListener("click", function() {
 document.getElementById("slider").addEventListener("input", function() {
 	console.log(this.value);
 	video.volume = this.value / 100;
-	document.getElementById("volume").innerHTML = this.value + "%";
+	if (!video.paused) {
+		document.getElementById("volume").innerHTML = this.value + "%";
+	}
 });
 
 // Vintage
