@@ -9,8 +9,6 @@ video.autoplay = false;
 video.loop = false;
 video.load();
 
-document.getElementById("volume").innerHTML = (video.volume * 100) + "%"; });
-
 //document.querySelector("#play").addEventListener("click", function() {
 //console.log("Play Video");
 //});
